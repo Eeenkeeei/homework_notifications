@@ -18,7 +18,7 @@ const timerHeaderEl = document.querySelector('#timerHeader');
 const timerTextEl = document.querySelector('#timerText');
 timerFormEl.addEventListener('submit', async (evt) => {
     evt.preventDefault();
-    const timerTime = timerTimeEl.value.trim() * 1000;
+    const timerTime = timerTimeEl.value.trim() * 60000;
     const timerHeader = timerHeaderEl.value.trim();
     const timerText = timerTextEl.value.trim();
 
@@ -42,7 +42,7 @@ const constantlyButtonEl = document.querySelector('#constantlyButton');
 let counter = 0;
 constantlyButtonEl.addEventListener('click', async (evt) => {
     evt.preventDefault();
-    const constantlyTime = constantlyTimeEl.value.trim() * 1000;
+    const constantlyTime = constantlyTimeEl.value.trim() * 60000;
     const constantlyHeader = constantlyHeaderEl.value.trim();
     const constantlyText = constantlyTextEl.value.trim();
     const constantlyCount = Number(constantlyCountEl.value.trim());
