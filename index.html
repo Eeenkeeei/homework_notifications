@@ -14,9 +14,12 @@
     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-6">
         <form id="timer">
             <div class="form-group">
-                <label for="timerTime">Установить таймер</label>
-                <input type="text" class="form-control" id="timerTime"  placeholder="Время в минутах">
-                <small id="emailHelp" class="form-text text-muted">Введите время в минутах</small>
+                <label for="timerTime"><h3>Установить таймер</h3></label>
+                <input type="text" class="form-control" id="timerTime"  placeholder="Время до таймера">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="timerSwitch">
+                    <label class="custom-control-label" for="timerSwitch" id="timerSwitchLabel">Время в минутах</label>
+                </div>
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="timerHeader" placeholder="Заголовок уведомления">
@@ -26,17 +29,21 @@
             </div>
             <button type="submit" class="btn btn-primary">Поставить таймер</button>
         </form>
+
     </div>
 </div>
-
 <div class="row justify-content-center">
     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-6">
         <form id="constantly">
             <div class="form-group">
-                <label for="timerTime">Установить повторение уведомления</label>
-                <input type="text" class="form-control" id="constantlyTime"  placeholder="Время в минутах">
-                <small class="form-text text-muted">Введите время в минутах</small>
+                <label for="timerTime"><h3>Установить повторение уведомления</h3></label>
+                <input type="text" class="form-control" id="constantlyTime"  placeholder="Время до первого срабатывания">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="constantlySwitch">
+                    <label class="custom-control-label" for="constantlySwitch" id="constantlySwitchLabel">Время в минутах</label>
+                </div>
             </div>
+
             <div class="form-group">
                 <input type="text" class="form-control" id="constantlyHeader" placeholder="Заголовок уведомления">
             </div>
